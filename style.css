@@ -1,0 +1,100 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+body {
+  font-family: "Noto Sans", sans-serif;
+/*   font-size: 16px; */
+}
+
+h1, h2{
+  font-family: Oswald, sans-serif;
+/*   font-size: 46px; */
+}
+h2{
+  font-size:22px;
+}
+body{
+  background-color: #BFD7B5;
+  margin:0;
+  padding:0;
+}
+p{
+  font-size:12px;
+}
+img{
+ position: absolute;
+z-index: 10;
+  opacity:50%;
+  width:200px;
+}
+.img1{
+  bottom: 50px;
+right:20px;
+}
+.img2{
+  top: 80px;
+  left:20px;
+  transform:rotate(180deg);
+  
+}
+
+.header {
+  background-color: #E7EFC5;
+  padding: 15px;
+  margin:0px;
+  text-align: center;
+    border:2px solid #F2E7C9;
+
+}
+.menu{
+  display:flex;
+  justify-content: space-around;
+  border:2px;
+  
+}
+h3{
+  display:inline;
+}
+.price{
+  float:right;
+  display:inline;
+}
+.menu div{
+/*   width:300px;
+ */
+/*  float: left; */
+  width: 25%;
+  background-color: #A3C4BC;
+  margin:5px;
+  padding:8px;
+  border:2px solid #F2E7C9 ;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .menu div {
+    width: 95%;
+    
+  }
+  .menu{
+    flex-direction: column;
+  }
+  .img2{
+display:none;
+  }
+}
+.topnav ul{
+  list-style-type: none;
+   margin: 0;
+  padding: 0;
+  display:flex;
+  justify-content: flex-end;
+}
+li{
+   padding:10px;
+}
+li:hover{
+  background-color:#F2E7C9;
+}
